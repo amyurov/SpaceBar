@@ -13,7 +13,6 @@ public class Server {
 
         serverChannel.bind(new InetSocketAddress("127.0.0.1", 8888));
 
-
         while (true) {
             try (SocketChannel socketChannel = serverChannel.accept();
                  serverChannel) {
